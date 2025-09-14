@@ -7,7 +7,7 @@ async function download(url) {
     responseType: "arraybuffer",
   });
 
-  let mimeType = headers[CONTENT_TYPE_HEADER];
+  let mimeType = headers["content-type"];
   return { mimeType, data };
 }
 
