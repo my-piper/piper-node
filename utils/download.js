@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 async function download(url) {
   const { data, headers } = await axios({
     method: "get",
